@@ -379,6 +379,7 @@ footer{
     box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 10%);
     margin-top: 100px;
     padding: 0 100px;
+    overflow: hidden;
 }
 .newsletter-section{
     /* grid-area: 1/1/2/3; */
@@ -437,7 +438,7 @@ a:hover{
 .planteplanet-transparent{
     background-image: url(./kwiatekplaneter.png);
     width: 50%;
-    height: 70%;
+    height: 65%;
     background-size: contain;
     grid-area: 1/3/5/4;
     background-repeat: no-repeat;
@@ -459,11 +460,13 @@ a:hover{
     justify-content: space-between;
     grid-area: 3/1/4/5;
     align-items: center;
+    align-self: center;
 }
-.icons-container-footer, .copyright-part, .some-part, .copyright-and-some-row, .card-issuers-row{
+.copyright-part, .some-part, .copyright-and-some-row, .card-issuers-row{
     margin: 0;
     padding-top: 0;
 }
 .copyright-part p{
     margin: 0;
+    bottom: 0;
 }
