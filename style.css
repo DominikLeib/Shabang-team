@@ -355,7 +355,7 @@ luminosity	Sets the blending mode to luminosity
     display: flex;
     justify-content: center;
 }
-.button-wrapper button{
+.button-wrapper button, footer button{
     padding: 1.5em 5em;
     background-color: coral;
 }
@@ -371,35 +371,26 @@ luminosity	Sets the blending mode to luminosity
 
 footer{
     display: grid;
-    grid-template-columns:  repeat(5, 1fr);
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns:  2fr 2fr 3fr;
+    grid-template-rows: 1fr .25fr .3fr;
     width: 100%;
     z-index: 100;
     bottom: 0;
     box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 10%);
-    backdrop-filter: blur(15px);
     margin-top: 100px;
     padding: 0 100px;
 }
 .newsletter-section{
-    grid-area: 1/1/2/3;
-    /* display: flex;
-    justify-content: start;
-    flex-direction: column; */
+    /* grid-area: 1/1/2/3; */
 }
 .newsletter-section p{
     padding-right: 200px;
 }
 .contact-info{
-    grid-area: 1/3/2/4;
-    
-}
-.warehouse-info{
-    grid-area: 1/4/2/5;
-    
+    /* grid-area: 1/3/2/4; */
 }
 .footer-navigation{
-    grid-area: 1/5/2/6;
+    /* grid-area: 1/4/2/5; */
 }
 footer div{
     padding-top: 70px;
@@ -408,6 +399,7 @@ footer ul{
     list-style-type: none;
     padding-left: 0;
 }
+/* THIS NEEDS TO BE CHANGED AND BEST IF COHESIVE WITH FORM DONE BY MONICA*/
 footer input{
     padding: 20px;
     border-radius: 5px;
@@ -420,6 +412,7 @@ footer input{
         text-shadow: 2px 2px 2px rgba(110, 193, 228, .6);
         backdrop-filter: blur(15px);
 }
+/* YES THIS UP HERE*/ 
 .zobaczmy{
     margin: 90px 0;
 }
@@ -432,34 +425,45 @@ footer button{
 footer i{
     font-size: 2em;
 }
-.footer-connect-section{
-    grid-area: 2/5/3/6;
-}
-.copyright-section{
-    /* grid-area: 2/1/3/2; */
-}
-.copyright-section, .footer-connect-section{
-    padding-bottom: 2em;
-}
-.icons-container-footer{
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
 .footer-section-header{
     font-weight: 600;
-}
-
-#different-color-responsibility {
-    color: #7c8807;
 }
 a{
     transition-duration: .3s;
 }
-a:hover, #different-color-responsibility:hover{
+a:hover{
     color:  rgba(110, 193, 228, 1);
 }
-.higher-z-index{
-    z-index: 15190;
+.planteplanet-transparent{
+    background-image: url(./kwiatekplaneter.png);
+    width: 50%;
+    height: 70%;
+    background-size: contain;
+    grid-area: 1/3/5/4;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -8em;
+    left: 80vh;
+}
+.card-issuers-row{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 4em;
+    padding-right: 4em;
+    grid-area: 2/3/3/4;
+}
+.copyright-and-some-row{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    grid-area: 3/1/4/5;
+    align-items: center;
+}
+.icons-container-footer, .copyright-part, .some-part, .copyright-and-some-row, .card-issuers-row{
+    margin: 0;
+    padding-top: 0;
+}
+.copyright-part p{
+    margin: 0;
 }
