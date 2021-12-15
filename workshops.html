@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshops</title>
     <link rel="stylesheet" href="./css/workshops.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,6 +33,79 @@
 </head>
 
 <body>
+    <header>
+        <nav class="left-side-navbar">
+            <ul>
+                <a class="collapsable" href="#">
+                    <li>HOME</li>
+                </a>
+                <a class="collapsable" href="#">
+                    <li>SHOP</li>
+                </a>
+                <a class="collapsable" href="#">
+                    <li>WORKSHOPS</li>
+                </a>
+                <a class="collapsable" href="#">
+                    <li>ABOUT</li>
+                </a>
+                <a class="collapsable" href="#">
+                    <li>CONTACT</li>
+                </a>
+                <a class="burger-menu" href="#"><i class="fas fa-bars"></i></a>
+            </ul>
+        </nav>
+
+        <div class="centered-logo-navbar-container">
+            <div id="centered-logo-navbar"></div>
+        </div>
+
+        <div class="right-side-navbar">
+            <a class="collapsable" href="#">
+                <p>SEARCH</p>
+            </a>
+            <a class="collapsable" href="#">
+                <p>ACCOUNT</p>
+            </a>
+            <a href="#">
+                <p>CART (1)</p>
+            </a>
+        </div>
+
+    </header>
+
+    <!---------COLLAPSABLE MOBILE MENU - OPENS UP WHEN YOU CLICK ON BURGER MENU-->
+    <div class="mobile-menu">
+        <!--Searchbar-->
+        <div class="top-mobile-view">
+
+            <i class="fas fa-times close-mobile-menu"></i>
+        </div>
+
+        <ul>
+            <a href="#">
+                <li>HOME</li>
+            </a>
+            <a href="#">
+                <li>SHOP</li>
+            </a>
+            <a href="#">
+                <li>WORKSHOPS</li>
+            </a>
+            <a href="#">
+                <li>ABOUT</li>
+            </a>
+            <a href="#">
+                <li>CONTACT</li>
+            </a>
+            <a href="#">
+                <li>ACCOUNT</li>
+            </a>
+            <li id="search-container-mobile-menu"><input type="text" placeholder="Search.."></li>
+        </ul>
+    </div>
+    <!-------END OF MOBILE MENU-->
+    <!--This is the dark overlay that comes when you click on the burger menu-->
+    <div id="overlay-mobile-menu"></div>
 
     <div class="hero-section">
         <h1 class="hero-title">WORKSHOPS</h1>
@@ -107,6 +181,10 @@
             </div>
         </div>
     </section>
+
+    <script src="https://kit.fontawesome.com/756e5f6649.js" crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
