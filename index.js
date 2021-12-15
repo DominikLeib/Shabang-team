@@ -29,3 +29,10 @@ closeMobileMenu.addEventListener("click" , function(){
 
 
 
+////Keeping the height of circle according to width of screen
+// window.addEventListener('resize', function(){
+//     let tileHeight = document.getElementById('.navigation-tiles-container').clientHeight;
+//     let halfOfHeight = tileHeight / 2;
+//     console.log(halfOfHeight)
+//     docoument.querySelector(".navigation-circle-tile").style.marginTop = halfOfHeight;
+// });
