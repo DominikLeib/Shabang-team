@@ -7,23 +7,23 @@ let closeMobileMenu = document.querySelector(".close-mobile-menu");
 
 
 //CLICK BURGER MENU -> MENU MOBILE APPEARS
-burgerMenuButton.addEventListener("click" , function(){
+burgerMenuButton.addEventListener("click", function () {
     mobileMenu.style.left = "0"
     overlay.style.backgroundColor = "rgba(0, 0, 0, .5)"
     overlay.style.zIndex = "101"
 })
 
 //CLICK OVERLAY OR X AND COME BACK FROM MOBILE MENU
-overlay.addEventListener("click" , function(){
+overlay.addEventListener("click", function () {
     mobileMenu.style.left = "-70vw"
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0)"
-    setTimeout(() => {  overlay.style.zIndex = "initial" }, 1500);
+    setTimeout(() => { overlay.style.zIndex = "initial" }, 1500);
 })
 //(((((((((((YOU CAN MAKE IT ONE FUNCTION AND CALL IT TWO TIMES)))))))))
-closeMobileMenu.addEventListener("click" , function(){
+closeMobileMenu.addEventListener("click", function () {
     mobileMenu.style.left = "-70vw"
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0)"
-    setTimeout(() => {  overlay.style.zIndex = "initial" }, 1500);
+    setTimeout(() => { overlay.style.zIndex = "initial" }, 1500);
 })
 
 
