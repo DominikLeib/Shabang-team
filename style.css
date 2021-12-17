@@ -327,7 +327,7 @@ luminosity	Sets the blending mode to luminosity
     text-align: center;
     margin-bottom: 1em;
 }
-.product-list{
+/* .product-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 50px;
@@ -347,7 +347,7 @@ luminosity	Sets the blending mode to luminosity
 }
 .product-title, .product-price{
     text-align: center;
-}
+} */
 .button-wrapper{
     width: 100%;
     display: flex;
@@ -514,4 +514,40 @@ a:hover{
     .navigation-tiles-container{
         padding: 50px;
     }
+}
+
+
+
+
+
+    /* PRODUCTLIST ALL COMPONENT CODE ALONG WITH MEDIA QUERIES*/
+    .product {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 1em;
+    }
+    dl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+    dl img {
+        width: 100%;
+    }
+    .product h4 {
+        font-size: 0.9em;
+        text-align: center;
+        margin-bottom: 0;
+    }
+@media only screen and (min-width:700px) {
+        .product {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
 }
