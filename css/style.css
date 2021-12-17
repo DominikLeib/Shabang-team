@@ -322,3 +322,120 @@ luminosity	Sets the blending mode to luminosity
     mix-blend-mode: difference;
     color: black;
 }
+
+/*CODE IMPORTED FROM NOTHER FILE JUST CHECKIN NOW*/
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns:  2fr 2fr 3fr;
+    /* grid-template-rows: 1fr .25fr .3fr; */
+    width: 100%;
+    z-index: 100;
+    bottom: 0;
+    box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 10%);
+    margin-top: 100px;
+    padding: 0 100px;
+    overflow: hidden;
+    background-color: rgba(0 202 12 / 22%);
+}
+.newsletter-section{
+    /* grid-area: 1/1/2/3; */
+    z-index: 5;
+}
+.newsletter-section p{
+    padding-right: 200px;
+}
+.contact-info{
+    /* grid-area: 1/3/2/4; */
+}
+.footer-navigation{
+    /* grid-area: 1/4/2/5; */
+}
+footer div{
+    padding-top: 70px;
+}
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+/* THIS NEEDS TO BE CHANGED AND BEST IF COHESIVE WITH FORM DONE BY MONICA*/
+footer input{
+    padding: 20px;
+    border-radius: 5px;
+
+    background-color: #D0D0D0;
+    box-shadow:  -4px 4px 3px rgba(110, 151, 228, 0.4), inset 0px 0px 10px 0px rgba(110, 193, 228, 1);
+    border: none;
+    color: rgb(110, 193, 228);
+    font-size: 1.1rem;
+        text-shadow: 2px 2px 2px rgba(110, 193, 228, .6);
+        backdrop-filter: blur(15px);
+}
+/* YES THIS UP HERE*/ 
+.zobaczmy{
+    margin: 90px 0;
+}
+footer p, footer li{
+    line-height: 1.8em;
+}
+footer button{
+    margin: 1em 0 0 0 ;
+}
+footer i{
+    font-size: 2em;
+    padding-left: .5em;
+}
+.footer-section-header{
+    font-weight: 600;
+}
+a{
+    transition-duration: .3s;
+}
+a:hover{
+    color:  rgba(110, 193, 228, 1);
+}
+.planteplanet-transparent{
+    background-image: url(./kwiatekplaneter.png);
+    width: 50%;
+    height: 65%;
+    background-size: contain;
+    grid-area: 1/3/5/4;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -8em;
+    left: 80vh;
+}
+.card-issuers-row{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 4em;
+    grid-area: 2/3/3/4;
+    margin: 3em 0 3em 0;
+    padding-top: 0;
+}
+.copyright-and-some-row{
+    background-color: white;
+    display: flex;
+    width: calc(100% + 200px);
+    justify-content: space-between;
+    grid-area: 3/1/4/5;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 10%);
+    margin-left: -100px;
+    z-index: 1000;
+}
+.copyright-part, .some-part{
+    padding-top: 0;
+}
+.copyright-part p{
+    margin: 0;
+    bottom: 0;
+    padding-left: 100px;
+}
+.some-part{
+    padding-right: 100px;
+}
