@@ -521,6 +521,12 @@ a:hover{
     #shop-tile{
         margin-top: calc(50vh - 7em - 100px);
     }
+    footer{
+        display: block;
+    }
+    footer div{
+        padding: 0;
+    }
 }
 @media screen and (max-width: 1050px){
     .navigation-circle-tile{
@@ -553,11 +559,35 @@ a:hover{
         width: 100%;
         height: 100%;
     }
+    .quote-and-picture-container{
+        margin-top: 40em;
+    }
+    footer i{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        padding: 0 50px ;
+    }
+    .newsletter-section p{
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
     .navigation-tiles-container{
         padding: 50px;
+    }
+    footer input{
+        padding: 5px ;
+    }
+    .some-part i{
+        font-size: .8em;
+    }
+    .copyright-part p{
+        font-size: .8em;
     }
 }
 
@@ -595,4 +625,5 @@ a:hover{
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
         }
+        
 }
