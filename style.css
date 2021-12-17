@@ -253,28 +253,34 @@ header a:hover::after{
     /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/workshops-tile.png); */
     background-image: url(./img/workshops-tile.png);
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 50vw rgba(0, 255, 150, 0.22);
+box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+border-radius: 15% 0 0 0;
+behavior: url(/pie/PIE.htc);
 }
 #spaces-tile{
     grid-area: 1/2/2/3;
     /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/spaces-tile1.jpeg); */
     background-image: url(./img/spaces-tile1.jpeg);
-    box-shadow: inset 0 0 0 50vw rgba(0, 255, 150, 0.22);
+    box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    border-radius: 0 15% 0 0;
+behavior: url(/pie/PIE.htc);
 
 }
 #contact-tile{
     grid-area: 2/1/3/2;
     /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO CONTACT */
     background-image: url(./img/spaces-tile1.jpeg);
-    box-shadow: inset 0 0 0 50vw rgba(0, 255, 150, 0.22);
+    box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    border-radius: 0 0 0 15%;
+behavior: url(/pie/PIE.htc);
 
 }
 #about-tile{
         /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO ABOUT */
     background-image: url(./img/spaces-tile1.jpeg);
-    box-shadow: inset 0 0 0 50vw rgba(0, 255, 150, 0.22);
-
-    
+    box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    border-radius: 0 0 15% 0;
+behavior: url(/pie/PIE.htc);
 }
 #about-tile, #shop-tile{
     grid-area: 2/2/3/3;
@@ -397,7 +403,7 @@ luminosity	Sets the blending mode to luminosity
 footer{
     display: grid;
     grid-template-columns:  2fr 2fr 3fr;
-    grid-template-rows: 1fr .25fr .3fr;
+    /* grid-template-rows: 1fr .25fr .3fr; */
     width: 100%;
     z-index: 100;
     bottom: 0;
@@ -405,6 +411,7 @@ footer{
     margin-top: 100px;
     padding: 0 100px;
     overflow: hidden;
+    background-color: rgba(0 202 12 / 22%);
 }
 .newsletter-section{
     /* grid-area: 1/1/2/3; */
@@ -451,6 +458,7 @@ footer button{
 }
 footer i{
     font-size: 2em;
+    padding-left: .5em;
 }
 .footer-section-header{
     font-weight: 600;
@@ -476,25 +484,34 @@ a:hover{
     display: flex;
     justify-content: flex-end;
     padding-left: 4em;
-    padding-right: 4em;
     grid-area: 2/3/3/4;
+    margin: 3em 0 3em 0;
+    padding-top: 0;
 }
 .copyright-and-some-row{
     background-color: white;
     display: flex;
-    width: 100%;
+    width: calc(100% + 200px);
     justify-content: space-between;
     grid-area: 3/1/4/5;
     align-items: center;
     align-self: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 10%);
+    margin-left: -100px;
+    z-index: 1000;
 }
-.copyright-part, .some-part, .copyright-and-some-row, .card-issuers-row{
-    margin: 0;
+.copyright-part, .some-part{
     padding-top: 0;
 }
 .copyright-part p{
     margin: 0;
     bottom: 0;
+    padding-left: 100px;
+}
+.some-part{
+    padding-right: 100px;
 }
 
 
