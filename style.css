@@ -342,6 +342,7 @@ luminosity	Sets the blending mode to luminosity
 .product-image{
     background-image: url(./planteplaeholder.jpeg);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
 }
