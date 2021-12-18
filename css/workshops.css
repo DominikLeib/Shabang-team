@@ -218,6 +218,11 @@ font-size: 1.4em;
 .workshop-price {
   font-size: 1.1em;
 }
+.box-workshop-description-2 .btn {
+  width: 80%;
+  /* margin-left: 3em;
+  margin-right: 3em; */
+}
 
 
 
