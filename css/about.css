@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+header {
+    z-index: 600;
+    top: 0;
+}
+
+  /* ABOUT INTRODUCTION */
+  .about-introduction {
+      top: 30em;
+      max-height: 200px !important;
+      margin-left: 2em;
+      margin-bottom: 1em;
+  }
+  .about {
+      margin: 6em;
+      /* padding-left: 2em; */
+      max-width:300px ;
+      max-height: 800px;
+  }
+  .about h1 {
+      font-size: 2.4em;
+      z-index: 300;
+  }
+.about img {
+    top: -6em;
+    left: -1em;
+    height: 20em;
+    position: relative;
+    z-index: -300;
+}
+.about-description {
+    margin: 1.5em;
+    z-index: -200;
+    max-width:550px;
+    padding: 1em 2em 1em 2em;
+background-color: rgba(255, 255, 255, 0.495);
+box-shadow: 0px 2px 4px 2px rgba(0 0 0 / 10%), 0px -2px 4px 2px rgba(0 0 0 / 10%);
+/*Blur for now*/
+    backdrop-filter: blur(5px);
+border-radius: 0.8em;
+position: absolute;
+top: 9em;
+}
+.about-description h2 {
+font-size: 1em;
+}
+
+.about-description p {
+font-size: 0.9em;
+}
+
+/* HERO ABOUT BACKGROUND */
+.hero-section {
+    margin-top: 12em;
+    margin-bottom: 4em;
+    background-image: url(../img/heroimg.jpg);
+    background-size: cover;
+   width: 100vw;
+   height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0px 2px 4px 2px rgba(0 0 0 / 10%), 0px -2px 4px 2px rgba(0 0 0 / 10%);
+/*Blur for now*/
+    backdrop-filter: blur(15px);
+  }
+.hero-box {
+    background-color: rgba(255, 255, 255, 0.495);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5em;
+    margin: 1em;
+    max-width: 20em;
+    min-height: 10em;
+    padding: 1em;
+}
+
+.hero-box p {
+    font-size: 0.9em;
+}
+.part-2 {
+    margin-top: 2em;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+
+/* KAJA SECTION */
+.kaja-section {
+    margin: 7em 1em 1em 1em;
+    width: 90%;
+    max-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.kaja-section h3 {
+    font-size: 2em
+}
+.kaja-section img {
+    width: 100%;
+    z-index: -400;
+}
+.kaja-section p {
+    font-size: 0.8em;
+    width: 76%;
+    z-index: -200;
+    position: relative;
+    padding: 1em 2em 1em 2em;
+    background-color: rgba(255, 255, 255, 0.555);
+    box-shadow: 0px 2px 4px 2px rgba(0 0 0 / 10%), 0px -2px 4px 2px rgba(0 0 0 / 10%);
+        backdrop-filter: blur(5px);
+    border-radius: 0.8em;
+    top: -15em;
+}
+
+
+/* OTHER WORKERS */
+.other-workers{
+width: 90%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.worker {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.worker-description{
+   text-align: center;
+}
+.worker img{
+width: 70%;
+padding: 1em;
+}
+.worker-description h3 {
+    margin: 1px;
+    font-size: 1.2em;
+}
+.worker-description p {
+    font-size: 0.8em;
+}
+
+
+/* RESPONSIOBILITY */
+@media only screen and (min-width:400px) {
+    .hero-section {
+        margin-top: 10em;
+    }
+    .kaja-section img {
+        width: 500px;
+    }
+}
+@media only screen and (min-width:500px) {
+    .hero-section {
+        margin-top: 4em;
+    }
+
+    .worker-description h3 {
+        margin: 0px;
+        font-size: 1.5em;
+    }
+    .worker-description p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .hero-section {
+        margin-top: 2em;
+    }
+    .other-workers{
+        flex-direction: row;
+        }
+}
+
+@media only screen and (min-width:700px) {
+    .about-introduction {
+        flex-direction: row;
+    }
+    .about-description {
+      right: -2em;
+    }
+
+    .about-introduction {
+        max-height: 500px;
+    }
+    .hero-section {
+        margin-top: 0.5em;
+    }
+    .hero-section {
+        margin-top: 1em;
+    }
+
+    .kaja-section h3 {
+        font-size: 2.2em
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .about-description {
+        right: 0em;
+      }
+      .about-description h2 {
+        font-size: 1.3em;
+        }
+        
+        .about-description p {
+        font-size: 1em;
+        }
+        .kaja-section p {
+            font-size: 1em;
+}
+
+@media only screen and (min-width:900px) {
+    .about-description {
+        right: 5em;
+      }
+      .hero-section {
+          flex-direction: row;
+      }
+      .hero-box {
+        min-height: 12em;
+      }
+      .hero-box  h3 {
+          font-size: 1.6em;
+      }
+      .hero-box p {
+          padding: 1em;
+          font-size: 1.1em;
+      }
+      .kaja-section img {
+      right: -4em;
+    }
+    .kaja-section p {
+        left: -4em;
+        width: 70%;
+    }
+}
+@media only screen and (min-width:950px) {
+    .kaja-section img {
+        right: -8em;
+      }
+      .kaja-section p {
+          left: -8em;
+      }
+}
+@media only screen and (min-width:1000px) {
+    .about-introduction {
+        margin-left: 6em;
+    }
+    .about-description {
+        right: 10em;
+      }
+      .worker-description h3 {
+        margin: 0px;
+        font-size: 1.8em;
+    }
+    .kaja-section {
+        max-height: 600px;
+    }
+    .kaja-section p {
+        width: 60%;
+    }
+    .part-2 {
+        margin-top: 7em;
+    }
+}
+@media only screen and (min-width:1100px) {
+    .about-description {
+        right: 15em;
+      }
+
+      .kaja-section h3 {
+        font-size: 2.5em
+    }
+}
+@media only screen and (min-width:1200px) {
+    .about-description {
+        right: 20em;
+      }
+      .part-2{
+          margin-top: 8em;
+      }
+}
+@media only screen and (min-width:1300px) {
+    .about-description {
+        right: 25em;
+      }
+}
+@media only screen and (min-width:1300px) {
+    .about-description {
+        right: 25em;
+      }
+}
+@media only screen and (min-width:1300px) {
+}
+
+ /* FOOTER QUERIES */
+
+ @media screen and (max-width: 1100px){
+    footer{
+        display: block;
+    }
+    footer div{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 800px){
+    footer i{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 600px){
+    footer{
+        padding: 0 50px ;
+    }
+    .newsletter-section p{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    footer input{
+        padding: 5px ;
+    }
+    .some-part i{
+        font-size: .8em;
+    }
+    .copyright-part p{
+        font-size: .8em;
+    }
+}
