@@ -672,6 +672,12 @@ display: none;
         flex-direction: column;
         padding: 40px;
         width: 100%;
+        transition-duration: .3s;
+    }
+    .one-product:hover{
+        transform: scale(1.07);
+     
+
     }
     .product-image{
         /*background-image: url(./bag.jpg);*/
