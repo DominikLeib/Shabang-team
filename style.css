@@ -454,9 +454,6 @@ footer i{
 a{
     transition-duration: .3s;
 }
-a:hover{
-    color:  rgba(110, 193, 228, 1);
-}
 .planteplanet-transparent{
     background-image: url(./kwiatekplaneter.png);
     width: 50%;
