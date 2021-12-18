@@ -253,15 +253,16 @@ header a:hover::after{
     /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/workshops-tile.png); */
     background-image: url(../img/workshops-tile.png);
     background-repeat: no-repeat;
-box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
 border-radius: 15% 0 0 0;
 behavior: url(/pie/PIE.htc);
+
 }
 #spaces-tile{
     grid-area: 1/2/2/3;
     /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/spaces-tile1.jpeg); */
     background-image: url(../img/spaces-tile1.jpeg);
-    box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 15% 0 0;
 behavior: url(/pie/PIE.htc);
 
@@ -269,16 +270,19 @@ behavior: url(/pie/PIE.htc);
 #contact-tile{
     grid-area: 2/1/3/2;
     /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO CONTACT */
-    background-image: url(../img/spaces-tile1.jpeg);
-    box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    background-image: url(../img/contact-tile.jpg);
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 0 15%;
 behavior: url(/pie/PIE.htc);
+background-position-y: -100px;
+
 
 }
 #about-tile{
         /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO ABOUT */
-    background-image: url(../img/spaces-tile1.jpeg);
-    box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
+    background-image: url(../img/about-tile.jpg);
+    background-position-y: -100px;
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 15% 0;
 behavior: url(/pie/PIE.htc);
 }
