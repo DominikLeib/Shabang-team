@@ -49,7 +49,7 @@ a{
     margin: 0;
 }
 #centered-logo-navbar{
-    background-image: url(./logo.png);
+    background-image: url(../img/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@ header a:hover::after{
     height: 100%;
     background-size: cover;
     background-position: center;
-    /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./planteplaeholder.jpeg); */
+    /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(../img/planteplaeholder.jpeg); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +251,7 @@ header a:hover::after{
 #workshops-tile{
     grid-area: 1/1/2/2;
     /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/workshops-tile.png); */
-    background-image: url(./img/workshops-tile.png);
+    background-image: url(../img/workshops-tile.png);
     background-repeat: no-repeat;
 box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
 border-radius: 15% 0 0 0;
@@ -260,7 +260,7 @@ behavior: url(/pie/PIE.htc);
 #spaces-tile{
     grid-area: 1/2/2/3;
     /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/spaces-tile1.jpeg); */
-    background-image: url(./img/spaces-tile1.jpeg);
+    background-image: url(../img/spaces-tile1.jpeg);
     box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
     border-radius: 0 15% 0 0;
 behavior: url(/pie/PIE.htc);
@@ -269,7 +269,7 @@ behavior: url(/pie/PIE.htc);
 #contact-tile{
     grid-area: 2/1/3/2;
     /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO CONTACT */
-    background-image: url(./img/spaces-tile1.jpeg);
+    background-image: url(../img/spaces-tile1.jpeg);
     box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
     border-radius: 0 0 0 15%;
 behavior: url(/pie/PIE.htc);
@@ -277,7 +277,7 @@ behavior: url(/pie/PIE.htc);
 }
 #about-tile{
         /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO ABOUT */
-    background-image: url(./img/spaces-tile1.jpeg);
+    background-image: url(../img/spaces-tile1.jpeg);
     box-shadow: inset 0 0 0 50vw rgba(0, 202, 12, 0.22);
     border-radius: 0 0 15% 0;
 behavior: url(/pie/PIE.htc);
@@ -310,7 +310,7 @@ behavior: url(/pie/PIE.htc);
     margin-bottom: 200px;
     justify-content: center;
 
-    background-image: url(./quoteblockimage.png);
+    background-image: url(../img/quoteblockimage.png);
 
     background-position:500% 0%;
 }
@@ -367,7 +367,7 @@ luminosity	Sets the blending mode to luminosity
 }
 
 .product-image{
-    background-image: url(./planteplaeholder.jpeg);
+    background-image: url(../img/planteplaeholder.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -455,7 +455,7 @@ a{
     transition-duration: .3s;
 }
 .planteplanet-transparent{
-    background-image: url(./kwiatekplaneter.png);
+    background-image: url(../img/kwiatekplaneter.png);
     width: 50%;
     height: 65%;
     background-size: contain;
@@ -463,8 +463,8 @@ a{
     background-repeat: no-repeat;
     position: absolute;
     margin-top: -8em;
-    left: 70vw;
-}
+    left: 70vw;}
+    
 .card-issuers-row{
     display: flex;
     justify-content: flex-end;
@@ -553,7 +553,6 @@ a{
         position: initial;
         margin: auto;
         grid-area: 4/1/5/2;
-        
     }
     .navigation-circle-tile{
         border-radius: 0;

@@ -13,7 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!--SOFIA PRO FONT MISSING HERE-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
 
     <!--FONT THATS ONLY FOR THE QUOTATION MARKS IN BLOCKQUOTE I THINK TEMPORARY FOR NOW-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,186 +101,102 @@
     <!--This is the dark overlay that comes when you click on the burger menu-->
     <div id="overlay-mobile-menu"></div>
 
-    <video src="./planteplaneter_01 copy.MP4" autoplay loop muted class="hero-video"></video>
 
-    <main>
-
-
-
-        <div class="navigation-tiles-container">
-
-            <a href="#workshops">
-                <div class="navigation-tile" id="workshops-tile">
-                    <p>WORKSHOPS</p>
-                </div>
-            </a>
-            <a href="#spaces">
-                <div class="navigation-tile" id="spaces-tile">
-                    <p>SPACES</p>
-                </div>
-            </a>
-            <a href="#contact">
-                <div class="navigation-tile" id="contact-tile">
-                    <p>CONTACT</p>
-                </div>
-            </a>
-            <a href="#about" id="spaces-tile-anchor">
-                <div class="navigation-tile" id="about-tile">
-                    <p>ABOUT</p>
-                </div>
-            </a>
-            <a href="#shop" id="shop-tile">
-                <div class="navigation-circle-tile">
-                    <p class="text-navigation-circle">SHOP</p>
-                </div>
-            </a>
-
+    <section class="product-view">
+        <div class="product-pics">
+            <div class="three-pics">
+                <img src="./img/CRASSULA-OVATA-ORGAN-PIPE-planteplaneter-kajaskytte-hanginggarden-greenliving-danishdesign.jpg"
+                    alt="">
+                <img src="./img/CRASSULA-OVATA-ORGAN-PIPE-planteplaneter-kajaskytte-hanginggarden-greenliving-danishdesign.jpg"
+                    alt="">
+                <img src="./img/CRASSULA-OVATA-ORGAN-PIPE-planteplaneter-kajaskytte-hanginggarden-greenliving-danishdesign.jpg"
+                    alt="">
+            </div>
+            <div class="main-pic">
+                <img src="./img/CRASSULA-OVATA-ORGAN-PIPE-planteplaneter-kajaskytte-hanginggarden-greenliving-danishdesign.jpg"
+                    alt="">
+            </div>
         </div>
+        <div class="product-information">
+            <h1>Organ Pipe Planteplanet</h1>
+            <div class="add-and-price">
+                <p class="price">399 DKK</p>
+                <div class="btn quantity"> - 1 + </div>
+            </div>
+            <div class="shopping-buttons">
+                <div class="btn">ADD TO CARD</div>
+                <div class="btn">PROCEED TO CHECKOUT</div>
+            </div>
+            <div class="description">
+                <p><span>Planteplaneter</span> are small handmade design “planets” of soil with succulents growing
+                    out of them. They are made to hang from windows, ceilings, furniture etc.<br>
+                    The design is based on traditional Japanese techniques, with an added modern twist. Therefore it
+                    is a poetic and decorative suspension system, that offer an alternative to the ordinary
+                    houseplant.</p>
 
-
-        <div class="quote-and-picture-container">
-
-            <p class="quote">
-                <span class="specified-quote">
-                    Young man, there's no need to feel down, I said<br>
-                    Young man, pick yourself off the ground, I said</span>
-            </p>
-        </div>
-
-        <h2 class="products-header">PRODUCTS</h2>
-
-        <section class="product-list">
-
-            <!--THIS ONE IS GOING TO BE USED AS TEMPLATE-->
-            <!--              -->
-            <template class="template">
-                <div class="one-product template-product">
-                    <a href="#">
-                        <div class="product-image"></div>
-                    </a>
-                    <a href="#">
-                        <p class="product-name"></p>
-                    </a>
-                    <p class="product-price"></p>
+                <div>
+                    <h2>How to take care of the plant?</h2>
+                    <p>Planteplaneter is easy to water. You do it by dipping it in a bowl for ten minutes every two
+                        weeks or so. However on hot summer days it must be watered every week.</p>
                 </div>
-            </template>
-            <!--  -->
-<!-- <div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
 
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
+                <div class="sizes">
+                    <span>Sizes <br>
+                        (measured by the diameter of the coconut ball)</span><br>
+                    Note that sizes may vary slightly<br>
+                    <span>Medium:</span> App. 10 cm<br>
+                    <span>Large:</span> App. 13 cm<br>
+                    <span>X-Large:</span> App. 20 cm
+                </div>
 
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
+                <div class="shipping">
+                    <h2>Shipping</h2>
+                    <p>
+                        Free shipping for purchases over 398 DKK in Denmark.<br>
+                        Shipping once a week with GLS (Denmark) or UPS (rest of Europe).</p>
+                </div>
 
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div>
-
-<div class="one-product">
-    <div class="product-image"></div>
-    <p class="product-title">Aloe Planter</p>
-    <p class="product-price">399 DKK</p>
-</div> -->
-
-    <section class="product">
-        <!-- <dl>
-            <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
-            <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
-            <p class="price">399 DKK</p>
-        </dl>
-        <dl>
-            <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
-            <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
-            <p class="price">399 DKK</p>
-        </dl>
-        <dl>
-            <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
-            <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
-            <p class="price">399 DKK</p>
-        </dl>
-        <dl>
-            <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
-            <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
-            <p class="price">399 DKK</p>
-        </dl>
-        <dl>
-            <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
-            <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
-            <p class="price">399 DKK</p>
-        </dl>
-        <dl>
-            <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
-            <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
-            <p class="price">399 DKK</p>
-        </dl> -->
-    </article>
-
-        </section>
-
-        <div class="button-wrapper">
-            <div class="btn">Load More</div>
+            </div>
         </div>
-
-
-
-    </main>
-
-
+    </section>
+    <section class="see-more">
+        <h3>YOU MIGHT ALSO LIKE</h3>
+        <article class="product">
+            <dl>
+                <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
+                <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
+                <p class="price">399 DKK</p>
+            </dl>
+            <dl>
+                <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
+                <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
+                <p class="price">399 DKK</p>
+            </dl>
+            <dl>
+                <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
+                <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
+                <p class="price">399 DKK</p>
+            </dl>
+            <dl>
+                <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
+                <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
+                <p class="price">399 DKK</p>
+            </dl>
+            <dl>
+                <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
+                <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
+                <p class="price">399 DKK</p>
+            </dl>
+            <dl>
+                <img src="./img/halo_plante_planteplanet_kajaSkytte_brass_planteplaneter_ring.jpg" alt="">
+                <h4 class="name">ALOE BREVIFOLIA HALO PLANTEPLANET</h4>
+                <p class="price">399 DKK</p>
+            </dl>
+        </article>
+        <div class="more">
+            <div class="btn">SEE MORE</div>
+        </div>
+    </section>
 
     <footer>
 
@@ -339,7 +256,7 @@
             <input type="email" name="your-email" value="" size="40" class="newsletter-email-input" aria-required="true"
                 aria-invalid="false" placeholder="Email address">
             <br>
-            <div class="btn">Submit</div>
+            <button>Submit</button>
         </div>
 
         <div class="card-issuers-row">
@@ -359,15 +276,16 @@
             </div>
 
             <div class="some-part">
-                    <a href="https://www.instagram.com/planteplaneter/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/planteplaneter/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://id.pinterest.com/kajaskytte/planteplaneter/"><i class="fab fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/planteplaneter/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/planteplaneter/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://id.pinterest.com/kajaskytte/planteplaneter/"><i class="fab fa-pinterest"></i></a>
             </div>
         </div>
 
 
 
     </footer>
+
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/756e5f6649.js" crossorigin="anonymous"></script>
