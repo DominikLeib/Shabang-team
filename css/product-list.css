@@ -1,0 +1,11 @@
+main {
+    padding-top: 7em;
+}
+
+.product-name {
+    text-align: center;
+}
+
+.product-list {
+    grid-template-rows: repeat(6, 1fr);
+}
