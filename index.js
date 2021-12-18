@@ -57,8 +57,8 @@ function setupPlants(plantsArray) {
         const copy = template.cloneNode(true);
         copy.querySelector(".product-name").textContent = `${item.title.rendered}`;
         copy.querySelector(".product-price").textContent = `${item.price}`;
-        console.log(item.guid.rendered)
-        copy.querySelector(".product-image").style.backgroundImage = `url(${item.firstpicture})`
+        console.log(item)
+        copy.querySelector(".product-image").style.backgroundImage = `url(${item.imageurl})`
         console.log(item._links["wp:attachment"][0])
         // Setting up URL params for later on rendering item on product view depending on URL params
         copy.querySelector("a").setAttribute("href", "product.html?id=" + `${item.id}`);
