@@ -294,7 +294,9 @@ behavior: url(/pie/PIE.htc);
     margin-left: calc(50% - 100px - 9vw + 0.5em);
     /* margin-top: calc(20% - 10em); */
     margin-top: calc(50vh - 9em - 100px);
-
+}
+#shop-tile:hover {
+    color: #809750;
 }
 .text-navigation-circle{
     font-size: 4em;
