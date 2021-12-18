@@ -108,7 +108,7 @@ header a::after{
     display: block;
     width: 0px;
     height: 2px;
-    background: #7ad03a;
+    background-color: #bfd19bac;
     transition: width .3s;
 }
 header a:hover::after{
@@ -405,7 +405,7 @@ footer{
     margin-top: 100px;
     padding: 0 100px;
     overflow: hidden;
-    background-color: rgba(0 202 12 / 22%);
+    background-color: #bfd19b60;
 }
 .newsletter-section{
     /* grid-area: 1/1/2/3; */
@@ -427,8 +427,8 @@ footer input{
     border-radius: 5px;
     background-color: white;
     border: none;
-    color: rgb(92, 92, 92);
-    font-size: 1.1rem;
+    color: rgba(92, 92, 92, 0.281);
+    font-size: 1rem;
         backdrop-filter: blur(15px);
 }
 /* YES THIS UP HERE*/ 
