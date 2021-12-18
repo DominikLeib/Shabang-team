@@ -103,7 +103,7 @@ main{
 
 /* ------------------------ */
 /* Hover animation for the navbar links */
-header a::after{
+header .hoverable::after{
     content: '';
     display: block;
     width: 0px;
