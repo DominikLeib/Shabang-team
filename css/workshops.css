@@ -9,7 +9,7 @@ body {
 /* HERO IMG */
 
 .hero-section {
-    background-image: url(../img/heroimg.jpg);
+    background-image: url(../img/workshop-background.jpg);
     background-size: cover;
    width: 100vw;
    height: 60vh;
@@ -31,7 +31,7 @@ flex-direction: column;
   }
   .learn {
     color: white;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 1.3em;
     padding-left: 2em;
     padding-right: 2em;
@@ -156,7 +156,6 @@ backdrop-filter: blur(5px);
   grid-template-rows: 0.5fr 0.6fr;
   padding: 4em;
   margin-top: 2em;
-  max-height: 3em;
   width: 100%;
 }
 
