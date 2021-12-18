@@ -423,6 +423,9 @@ footer{
 .newsletter-section p{
     padding-right: 200px;
 }
+footer ul a:hover{
+    color: gray;
+}
 footer div{
     padding-top: 70px;
 }
@@ -677,4 +680,8 @@ border-radius: 0.8em;
     border-radius: 0.4em;
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.098);
         backdrop-filter: blur(5px);
+}
+.btn:active{
+    box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.098);
+    color: white;
 }
