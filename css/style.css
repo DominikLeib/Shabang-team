@@ -388,6 +388,11 @@ luminosity	Sets the blending mode to luminosity
     padding: 1.5em 5em;
 }
 
+/* PRODUCT PRICE */
+.product-price {
+    font-weight: bold;
+}
+
 
 
 

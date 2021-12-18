@@ -160,7 +160,8 @@ backdrop-filter: blur(5px);
 }
 
 .box-workshop-2{
-  width: 100%;
+  width: 98%;
+  height: 80% ;
   padding: 0.5em;
   display: flex;
   flex-direction: row;
