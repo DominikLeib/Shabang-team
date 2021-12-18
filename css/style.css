@@ -443,6 +443,7 @@ footer p, footer li{
 }
 footer .btn{
     margin: 1em 0 0 0 ;
+    width: 73%;
 }
 footer i{
     font-size: 2em;
