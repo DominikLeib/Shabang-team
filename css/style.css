@@ -236,6 +236,11 @@ header a:hover::after{
     font-size: 4em;
     color: white;
     background-repeat: no-repeat;
+    transition-duration: .3s;
+}
+.navigation-tile:hover{
+    transform: scale(1.05);
+    
 }
 .navigation-circle-tile{
     background-color: white;
@@ -247,6 +252,11 @@ header a:hover::after{
     display: flex;
     justify-content:center;
     align-items:center;
+    transition-duration: .3s;
+
+}
+.navigation-circle-tile:hover{
+    transform: scale(1.15);
 }
 #workshops-tile{
     grid-area: 1/1/2/2;
@@ -256,7 +266,18 @@ header a:hover::after{
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
 border-radius: 15% 0 0 0;
 behavior: url(/pie/PIE.htc);
-
+}
+#workshops-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
+}
+#about-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
+}
+#spaces-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
+}
+#contact-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
 }
 #spaces-tile{
     grid-area: 1/2/2/3;
