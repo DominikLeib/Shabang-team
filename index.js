@@ -38,3 +38,31 @@ window.addEventListener('resize', function(){
 });
 
 
+/////////////? FETCHHHH
+getThePlants()
+
+function getThePlants() {
+
+    fetch("http://dominikleib.xyz/PLANTEPLANETER/wordpress/wp-json/wp/v2/item?per_page=100")
+        .then(response => response.json())
+        // .then(data => console.log(data))
+        .then(setupPlants);
+
+}
+
+function setupPlants(plantsArray) {
+    const template = document.querySelector(".template").content;
+    const parentElement = document.querySelector(".product");
+    plantsArray.forEach(item => {
+        const copy = template.cloneNode(true);
+        copy.querySelector(".product-name").textContent = `${item.title.rendered}`;
+        copy.querySelector(".product-price").textContent = `${item.price}`;
+        console.log(item.guid.rendered)
+        copy.querySelector(".product-image").style.backgroundImage = `url(${item.firstpicture})`
+        console.log(item._links["wp:attachment"][0])
+        // Setting up URL params for later on rendering item on product view depending on URL params
+        copy.querySelector("a").setAttribute("href", "product.html?id=" + `${item.id}`);
+
+        parentElement.appendChild(copy);
+    })
+}
