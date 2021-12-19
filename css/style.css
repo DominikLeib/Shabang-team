@@ -265,7 +265,7 @@ header a:hover::after{
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
 border-radius: 15% 0 0 0;
-behavior: url(/pie/PIE.htc);
+/* behavior: url(/pie/PIE.htc); */
 }
 #workshops-tile:hover{
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
@@ -284,7 +284,7 @@ behavior: url(/pie/PIE.htc);
     background-image: url(../img/spaces-tile1.jpeg);
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 15% 0 0;
-behavior: url(/pie/PIE.htc);
+/* behavior: url(/pie/PIE.htc); */
 
 }
 #contact-tile{
@@ -292,7 +292,7 @@ behavior: url(/pie/PIE.htc);
     background-image: url(../img/contact-tile.jpg);
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 0 15%;
-behavior: url(/pie/PIE.htc);
+/* behavior: url(/pie/PIE.htc); */
 background-position-y: -100px;
 
 
@@ -302,7 +302,7 @@ background-position-y: -100px;
     background-position-y: -100px;
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 15% 0;
-behavior: url(/pie/PIE.htc);
+/* behavior: url(/pie/PIE.htc); */
 }
 #about-tile, #shop-tile{
     grid-area: 2/2/3/3;

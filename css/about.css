@@ -355,12 +355,13 @@ padding: 1em;
     }
 }
 @media screen and (max-width: 500px){
-    footer input{
+    footer input {
         padding: 5px ;
     }
-    .some-part i{
+    .some-part i {
         font-size: .8em;
     }
-    .copyright-part p{
+    .copyright-part p {
         font-size: .8em;
     }
+}
