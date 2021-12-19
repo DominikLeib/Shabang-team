@@ -124,7 +124,6 @@ header a:hover::after{
         display: none;
     }
     .burger-menu{
-        /* DOESNT MAKE ANY SENSE WHY I HAVE TO PUT IMPORTANT IN HERE FFS*/
         display: block !important;
         position: initial !important;
     }
@@ -172,7 +171,6 @@ header a:hover::after{
     width: 100%;
     height: 3em;
     border: none;
-    /* COLOR OF BORDER BOTTOM NEEDS CHANGING*/
     border-bottom: 1px #333 solid;
 }
 #overlay-mobile-menu{
@@ -229,13 +227,17 @@ header a:hover::after{
     height: 100%;
     background-size: cover;
     background-position: center;
-    /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(../img/planteplaeholder.jpeg); */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4em;
     color: white;
     background-repeat: no-repeat;
+    transition-duration: .3s;
+}
+.navigation-tile:hover{
+    transform: scale(1.05);
+    
 }
 .navigation-circle-tile{
     background-color: white;
@@ -247,20 +249,34 @@ header a:hover::after{
     display: flex;
     justify-content:center;
     align-items:center;
+    transition-duration: .3s;
+
+}
+.navigation-circle-tile:hover{
+    transform: scale(1.15);
 }
 #workshops-tile{
     grid-area: 1/1/2/2;
-    /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/workshops-tile.png); */
     background-image: url(../img/workshops-tile.png);
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
 border-radius: 15% 0 0 0;
 behavior: url(/pie/PIE.htc);
-
+}
+#workshops-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
+}
+#about-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
+}
+#spaces-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
+}
+#contact-tile:hover{
+    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
 }
 #spaces-tile{
     grid-area: 1/2/2/3;
-    /* background:linear-gradient(0deg, rgba(255, 255, 150, 0.3), rgba(0, 255, 150, 0.3)), url(./img/spaces-tile1.jpeg); */
     background-image: url(../img/spaces-tile1.jpeg);
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 15% 0 0;
@@ -269,7 +285,6 @@ behavior: url(/pie/PIE.htc);
 }
 #contact-tile{
     grid-area: 2/1/3/2;
-    /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO CONTACT */
     background-image: url(../img/contact-tile.jpg);
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 0 15%;
@@ -279,7 +294,6 @@ background-position-y: -100px;
 
 }
 #about-tile{
-        /* THIS BACKGORUND IMAGE IS SUPPOSED TO BE CHANGED FOR SOMETHINING RELATED TO ABOUT */
     background-image: url(../img/about-tile.jpg);
     background-position-y: -100px;
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
@@ -292,7 +306,6 @@ behavior: url(/pie/PIE.htc);
 #shop-tile{
     position: absolute;
     margin-left: calc(50% - 100px - 9vw + 0.5em);
-    /* margin-top: calc(20% - 10em); */
     margin-top: calc(50vh - 9em - 100px);
 }
 #shop-tile:hover {
@@ -454,7 +467,6 @@ footer p, footer li{
 }
 footer .btn{
     margin: 1em 0 0 0 ;
-    /* width: 73%; */
 }
 footer i{
     font-size: 2em;
@@ -651,19 +663,22 @@ display: none;
         flex-direction: column;
         padding: 40px;
         width: 100%;
+        transition-duration: .3s;
+    }
+    .one-product:hover{
+        transform: scale(1.07);
+     
+
     }
     .product-image{
-        /*background-image: url(./bag.jpg);*/
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 20em;
         width: 20em;
         box-shadow: 0px 2px 4px 2px rgba(0 0 0 / 10%), 0px -2px 4px 2px rgba(0 0 0 / 10%);
-/*Blur for now*/
     backdrop-filter: blur(5px);
 border-radius: 0.8em;
-        /* transition-duration: .3s; */
     }
 @media only screen and (min-width:940px) {
         .product {

@@ -19,7 +19,6 @@ header {
   }
   .about {
       margin: 6em;
-      /* padding-left: 2em; */
       max-width:300px ;
       max-height: 800px;
   }
