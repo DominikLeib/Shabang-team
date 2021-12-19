@@ -31,6 +31,9 @@ header ul{
 header ul a{
     padding: 10px;
 }
+li a {
+    display: block;
+}
 
 header i{
     padding: 20px;
