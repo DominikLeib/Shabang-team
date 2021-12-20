@@ -85,11 +85,7 @@ video{
 /*END OF HEADER STYLING*/
 
 
-
-
-
-
-main{
+.main-in-index{
     padding-top: calc(100vh + 80px);
 }
 .hero-video{
@@ -102,8 +98,6 @@ main{
     z-index: -100;
     object-fit: cover;
 }
-
-
 
 /* ------------------------ */
 /* Hover animation for the navbar links */
@@ -201,21 +195,6 @@ header a:hover::after{
 }
 /*END OF MOBILE MENU STYLING*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navigation-tiles-container{
     width: 100vw;
     height: 100vh;
@@ -241,7 +220,6 @@ header a:hover::after{
 }
 .navigation-tile:hover{
     transform: scale(1.05);
-    
 }
 .navigation-circle-tile{
     background-color: white;
@@ -254,7 +232,6 @@ header a:hover::after{
     justify-content:center;
     align-items:center;
     transition-duration: .3s;
-
 }
 .navigation-circle-tile:hover{
     transform: scale(1.15);
@@ -265,18 +242,8 @@ header a:hover::after{
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
 border-radius: 15% 0 0 0;
-/* behavior: url(/pie/PIE.htc); */
 }
-#workshops-tile:hover{
-    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
-}
-#about-tile:hover{
-    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
-}
-#spaces-tile:hover{
-    box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
-}
-#contact-tile:hover{
+#workshops-tile:hover, #about-tile:hover, #spaces-tile:hover, #contact-tile:hover{
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.1);
 }
 #spaces-tile{
@@ -284,7 +251,6 @@ border-radius: 15% 0 0 0;
     background-image: url(../img/spaces-tile1.jpeg);
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 15% 0 0;
-/* behavior: url(/pie/PIE.htc); */
 
 }
 #contact-tile{
@@ -292,7 +258,6 @@ border-radius: 15% 0 0 0;
     background-image: url(../img/contact-tile.jpg);
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 0 15%;
-/* behavior: url(/pie/PIE.htc); */
 background-position-y: -100px;
 
 
@@ -302,7 +267,6 @@ background-position-y: -100px;
     background-position-y: -100px;
     box-shadow: inset 0 0 0 50vw rgba(1, 133, 10, 0.4);
     border-radius: 0 0 15% 0;
-/* behavior: url(/pie/PIE.htc); */
 }
 #about-tile, #shop-tile{
     grid-area: 2/2/3/3;
@@ -325,23 +289,20 @@ background-position-y: -100px;
 
 
 
-/*BLOCKQUOTE/////////////////////*/
+/*BLOCKQUOTE*/
 
 .quote-and-picture-container{
     width: 100vw;
     display: flex;
-    /* margin ponizej jest tu na chwile*/
     margin-bottom: 200px;
     justify-content: center;
-
     background-image: url(../img/quoteblockimage.png);
-
     background-position:500% 0%;
 }
 
 .quote::before{
     content: "\201c";
-    color: lightsalmon;
+    color: #bfd19bac;
     display: block;
     font-size: 4em;
     margin-bottom: -.2em;
@@ -349,27 +310,9 @@ background-position-y: -100px;
 .quote{
     font-size: 2.5em;
     width: 80%;
-    /*below margin = temporary*/
     margin-left: 5em;
     font-family: 'PT Sans', sans-serif;
     mix-blend-mode: luminosity    ;
-
-    /*
-    normal	This is default. Sets the blending mode to normal
-multiply	Sets the blending mode to multiply
-screen	Sets the blending mode to screen
-overlay	Sets the blending mode to overlay
-darken	Sets the blending mode to darken
-lighten	Sets the blending mode to lighten
-color-dodge	Sets the blending mode to color-dodge
-color-burn	Sets the blending mode to color-burn
-difference	Sets the blending mode to difference
-exclusion	Sets the blending mode to exclusion
-hue	Sets the blending mode to hue
-saturation	Sets the blending mode to saturation
-color	Sets the blending mode to color
-luminosity	Sets the blending mode to luminosity
-*/
 }
 .specified-quote{
     background-color: white;
@@ -382,23 +325,6 @@ luminosity	Sets the blending mode to luminosity
     text-align: center;
     margin-bottom: 1em;
 }
-/* .product-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 50px;
-    padding: 4em;
-}
-
-.product-image{
-    background-image: url(../img/planteplaeholder.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 400px;
-}
-.product-title, .product-price{
-    text-align: center;
-} */
 .button-wrapper{
     width: 100%;
     display: flex;
@@ -412,20 +338,11 @@ luminosity	Sets the blending mode to luminosity
 .product-price {
     font-weight: bold;
 }
-
-
-
-
-
-
-
-/*CODE IMPORTED FROM NOTHER FILE JUST CHECKIN NOW*/
 /* FOOTER */
 
 footer{
     display: grid;
     grid-template-columns:  2fr 2fr 3fr;
-    /* grid-template-rows: 1fr .25fr .3fr; */
     width: 100%;
     z-index: 100;
     bottom: 0;
@@ -436,7 +353,6 @@ footer{
     background-color: #bfd19b60;
 }
 .newsletter-section{
-    /* grid-area: 1/1/2/3; */
     z-index: 5;
 }
 .newsletter-section p{
@@ -452,7 +368,6 @@ footer ul{
     list-style-type: none;
     padding-left: 0;
 }
-/* THIS NEEDS TO BE CHANGED AND BEST IF COHESIVE WITH FORM DONE BY MONICA*/
 footer input{
     padding: 20px;
     border-radius: 5px;
@@ -462,7 +377,6 @@ footer input{
     font-size: 1rem;
         backdrop-filter: blur(15px);
 }
-/* YES THIS UP HERE*/ 
 .zobaczmy{
     margin: 90px 0;
 }
@@ -607,6 +521,9 @@ a{
     .planteplanet-transparent{
 display: none;
     }
+    .quote{
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -615,6 +532,13 @@ display: none;
     }
     .newsletter-section p{
         padding: 0;
+    }
+    .product-image{
+        width: 12em !important;
+        height: 12em !important;
+    }
+    .one-product{
+        padding: 1em !important;
     }
 }
 
@@ -630,6 +554,10 @@ display: none;
     }
     .copyright-part p{
         font-size: .8em;
+    }
+    .product-image{
+        width: 9em !important;
+        height: 9em !important;
     }
 }
 
@@ -668,6 +596,7 @@ display: none;
         padding: 40px;
         width: 100%;
         transition-duration: .3s;
+        overflow: hidden;
     }
     .one-product:hover{
         transform: scale(1.07);
@@ -691,7 +620,6 @@ border-radius: 0.8em;
         }
         
 }
-
 
 /* BUTTON STYLING */
 .btn {
